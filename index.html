@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="box-izquierda">
+            <textarea class="texto-ingresado" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="info">Solo texto en minuscula y sin acentos</p>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="box-derecha">
+        <img id="imagen" class="imagen" src="/imagenes/mensaje.png" alt="Imagen lee: ningun mensaje fue encontrado">
+            <textarea id="mensaje" class="mensaje" placeholder="Ningún mensaje fue encontrado" ></textarea>
+            <button id="boton-copiar" onclick="copiar()" class="boton-copiar">Copiar</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="footer">creado por: Francisco Maldonado</p>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+
+</html>

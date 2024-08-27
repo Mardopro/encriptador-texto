@@ -1,0 +1,153 @@
+*{
+    background-color: #F3F5FC;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    gap: 50px;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+
+.box-izquierda{
+    width: 50%;
+}
+
+.texto-ingresado{
+    height: 500px;
+    width: 100%;
+    border: none;
+    text-transform: lowercase; 
+    font-size: 32px;  
+}
+::placeholder{
+    color: #0A3871;
+    font-size: 26px;
+}
+.texto-ingresado:focus{
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 40px;    
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+    border: none;
+    height:50px;
+    width: 300px;
+    border-radius: 12px;  
+    color: #FFFFFF;
+    font-size: 16px;  
+}
+
+.boton-desencriptar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    height: 50px;
+    width: 300px; 
+    border-radius: 12px;
+    color: #0A3871;
+    font-size: 16px;
+}
+
+.info{
+    color: #495057;
+    font-size: 12px;
+}
+
+.box-derecha{
+    width: 50%;
+    height: 600px;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.mensaje{
+    height: 538px;
+    width: 400px;
+    border: none;
+    border-radius: 20px;
+    visibility: hidden;
+    font-size: 32px;
+    background-color: white;
+}
+
+
+.boton-copiar{
+    visibility: hidden;
+    background-color: white;
+    border: 1px solid #0A3871;
+    height: 50px;
+    width: 40%; 
+    border-radius: 12px;
+    color: #0A3871;
+    font-size: 16px;
+}
+
+.footer{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:950px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen{
+        display: none;
+    }
+    .mensaje{
+        visibility: visible;
+        border: white;
+        height: fit-content;
+    }
+
+}
+
+@media (max-width:375px){
+
+    main{
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+   .box-izquierda{
+        width: 100%;
+   }
+   .box-derecha{
+        width: 100%;
+        height: fit-content;
+        background-color: #FFFFFF;
+   }
+    .botones{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;    
+    }
+
+    .texto-ingresado{
+        height: 186px;
+        width: 327px;
+        text-align: center;
+    }
+
+    .mensaje{
+        height: 186px;
+        width: 327px;
+        text-align: center;
+    }
+}
